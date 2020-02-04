@@ -1,0 +1,6 @@
+[submodule "dev/packages/project-manager"]
+	path = dev/packages/project-manager
+	url = git@github.com:orichardson/atom-project-manager.git
+[submodule "dev/packages/atom-plain-simple"]
+	path = dev/packages/atom-plain-simple
+	url = https://github.com/orichardson/atom-plain-simple

@@ -1,0 +1,96 @@
+[
+  {
+    title: "PDG-code"
+    group: "research"
+    paths: [
+      "/home/oli/Research/Joe/agent-goals/papers/repr/code"
+      "/home/oli/Research/Joe/agent-goals/papers/repr"
+    ]
+    icon: "icon-tools"
+    color: "white"
+    settings:
+      "editor.tabLength": 4
+      "editor.showInvisibles": false
+      core:
+        themes: [
+          "atom-material-ui"
+          "atom-material-syntax"
+        ]
+      "atom-material-ui":
+        colors:
+          abaseColor: "#80deea"
+          accentColor: "#528c94"
+          predefinedColor: "Cyan"
+        tabs:
+          tintedTabBar: true
+        ui:
+          panelContrast: true
+    core:
+      themes: [
+        "atom-material-ui"
+        "atom-material-syntax"
+      ]
+    # "atom-material-ui":
+    #   colors:
+    #     abaseColor: "#80deea"
+    #     accentColor: "#528c94"
+    #     predefinedColor: "Cyan"
+    #   tabs:
+    #     tintedTabBar: true
+    #   ui:
+    #     panelContrast: true
+  }
+  {
+    title: "Project Manager"
+    group: "tools"
+    paths: [
+      "/home/oli/.atom/packages/project-manager"
+    ]
+    icon: "icon-chevron-down"
+    color: "light-blue"
+    settings:
+      "editor.showInvisibles": true
+      "editor.showLineNumbers": true
+      "editor.lineHeight": 1.5
+      core:
+        themes: [
+          "one-light-ui"
+          "atom-light-syntax"
+        ]
+    devMode: true
+  }
+  {
+    title: "Journal"
+    group: "record"
+    paths: [
+      "/home/oli/Org"
+      "/home/oli/Org/journal"
+    ]
+    icon: "icon-book"
+    color: "#CCCCCC"
+    settings:
+      "editor.tabLength": 4
+      core:
+        themes: [
+          "one-dark-ui"
+          "one-dark-syntax"
+        ]
+  }
+  # {
+  #   title: "Atom"
+  #   group: "tools"
+  #   paths: [
+  #     "/home/oli/.atom"
+  #   ]
+  #   color: "black"
+  #   settings:
+  #     "seti-ui":
+  #       hideProjectTab: true
+  #       themeColor: "Pink"
+  #     core:
+  #       themes: [
+  #         "seti-ui"
+  #         "seti-syntax"
+  #       ]
+  # }
+]

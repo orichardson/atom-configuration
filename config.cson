@@ -1,0 +1,126 @@
+"*":
+  "agda-mode":
+    agdaPath: "~/.cabal/bin/agda"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#5c6bc0"
+      predefinedColor: "Indigo"
+    tabs:
+      tintedTabBar: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-package-deps":
+    ignored: [
+      "linter"
+    ]
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  autosave: {}
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "markdown-preview"
+      "language-gfm"
+      "hydrogen-launcher"
+      "tasks"
+      "language-matlab"
+      "latex"
+      "org-mode"
+      "autosave"
+    ]
+    packagesWithKeymapsDisabled: [
+      "latex"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    softTabs: false
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "b1af2ff9-42af-4341-927b-aa755097dea9"
+  fonts:
+    fontFamily: "Droid Sans Mono"
+  latex:
+    opener: "pdf-view"
+  "markdown-preview-plus":
+    markdownItConfig: {}
+    mathConfig:
+      enableLatexRenderingByDefault: true
+    pandocConfig:
+      pandocArguments: [
+        "--smart"
+      ]
+      pandocBibliography: true
+      pandocRemoveReferences: false
+    previewConfig:
+      activatePreviewWithEditor: true
+    renderer: "pandoc"
+    syncConfig:
+      syncPreviewOnChange: true
+      syncPreviewOnEditorScroll: true
+    syntaxThemeName: "atom-dark-syntax"
+  "one-dark-ui": {}
+  organized:
+    enableToolbarSupport: false
+  "pdf-view":
+    fitToWidthOnOpen: true
+    reverseSyncBehaviour: "Double click"
+  "seti-syntax":
+    themeColor: "Pink"
+  "seti-ui":
+    hideProjectTab: true
+    themeColor: "Pink"
+  "spell-check":
+    addKnownWords: true
+    knownWords: [
+      "Halpern"
+      "homotopy"
+      "PLDG"
+      "frisbee"
+      "pomodoro"
+      "Where'd"
+      "todo"
+      "linearization"
+      "Fibrations"
+      "groupoids"
+      "typecheck"
+      "embeddings"
+      "morphism"
+      "posets"
+      "categorification"
+      "morphisms"
+      "bifibrant"
+      "naturality"
+      "functoriality"
+      "topos"
+      "abelianization"
+      "subobject"
+      "functors"
+      "subobjects"
+      "interlingua"
+      "simplicial"
+      "gamification"
+      "categorified"
+      "hoc"
+      "maximizers"
+    ]
+  tabs:
+    enableMruTabSwitching: false
+  tasks: {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
+".plain.simple.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: false
