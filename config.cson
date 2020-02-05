@@ -38,6 +38,7 @@
       "one-light-syntax"
     ]
   editor:
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
