@@ -43,13 +43,16 @@ atom-text-editor .cursor {
 // atom-pane.active {
 // 	opacity: .9;border: 2px solid red;
 // }
+atom-text-editor::shadow .invisible-character {
+	// color: turquoise 
+}
 
 atom-pane.pane:not(.active):not(:only-child) {
   	&:hover {
-   	 -webkit-filter: grayscale(40%);
+   	 -webkit-filter: grayscale(40%) brightness(90%);
 	}
-	
+
 	&:not(:hover) {
-		-webkit-filter: blur(.5px) grayscale(60%);
+		-webkit-filter: blur(.5px) grayscale(80%) brightness(60%);
 	}	
 }

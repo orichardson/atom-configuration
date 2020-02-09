@@ -41,3 +41,6 @@
 
 'atom-text-editor[data-grammar="text md"]':
 	'f5' : 'markdown-preview-plus:toggle'
+
+
+# 'atom-text-editor[data-grammar=""]'

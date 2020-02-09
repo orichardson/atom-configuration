@@ -3,9 +3,12 @@
     agdaPath: "~/.cabal/bin/agda"
   "atom-material-ui":
     colors:
-      abaseColor: "#5c6bc0"
-      predefinedColor: "Indigo"
+      abaseColor: "#7c055f"
+      accentColor: "#f7a879"
+      predefinedColor: "Pink"
     tabs:
+      compactTabs: true
+      stretchedTabs: true
       tintedTabBar: true
     ui:
       panelContrast: true
@@ -24,32 +27,35 @@
       "language-gfm"
       "hydrogen-launcher"
       "tasks"
-      "language-matlab"
-      "latex"
       "org-mode"
       "autosave"
+      "organized"
+      "Hydrogen"
     ]
     packagesWithKeymapsDisabled: [
       "latex"
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "atom-material-ui"
+      "atom-material-syntax-light"
     ]
   editor:
-    fontSize: 16
-    invisibles: {}
+    fontSize: 15
+    invisibles:
+      cr: false
+      eol: false
+      space: false
     preferredLineLength: 120
     scrollPastEnd: true
+    showInvisibles: true
     softTabs: false
     softWrap: true
     softWrapAtPreferredLineLength: true
-    tabLength: 4
   "exception-reporting":
     userId: "b1af2ff9-42af-4341-927b-aa755097dea9"
   fonts:
-    fontFamily: "Droid Sans Mono"
+    fontFamily: "DaddyTimeMono"
   latex:
     opener: "pdf-view"
   "markdown-preview-plus":
@@ -69,6 +75,12 @@
       syncPreviewOnChange: true
       syncPreviewOnEditorScroll: true
     syntaxThemeName: "atom-dark-syntax"
+  minimap:
+    absoluteMode: true
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+    scrollAnimation: true
   "one-dark-ui": {}
   organized:
     enableToolbarSupport: false
@@ -113,6 +125,11 @@
       "categorified"
       "hoc"
       "maximizers"
+      "LaTeX"
+      "JetBrains"
+      "TeX."
+      "TeX"
+      "cson"
     ]
   tabs:
     enableMruTabSwitching: false
