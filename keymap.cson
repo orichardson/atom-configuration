@@ -36,11 +36,87 @@
 #
 # Wiki: https://github.com/zhuochun/md-writer/wiki/Settings-for-Keymaps
 #
-'atom-text-editor[data-grammar~="latex"]':
-  'f5': 'latex:build'
+# 'atom-text-editor[data-grammar~="latex"]':
+#   'f5': 'latex:build'
+# 
+# 'atom-text-editor[data-grammar="text md"]':
+# 	'f5' : 'markdown-preview-plus:toggle'
+# 
+# 
+# # 'atom-text-editor[data-grammar=""]'
 
-'atom-text-editor[data-grammar="text md"]':
-	'f5' : 'markdown-preview-plus:toggle'
+'atom-text-editor.autocomplete-active':
+    tab: 'snippets:next-tab-stop'
 
 
-# 'atom-text-editor[data-grammar=""]'
+'atom-text-editor.vim-mode-plus':
+    'ctrl-shift-enter': 'vim-mode-plus:maximize-pane'
+    'ctrl-_' : 'core:undo'      # Emacs  compatibility
+    'ctrl-w' : 'native!'     # Who prefers C-W for delete a word to C-backspace??
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+    # 'ctrl-w' : 'none'
+    # 'ctrl-w ctrl-w': 'ed  itor:delete-to-beginning-of-word'
+    # 'ctrl-w w': 'editor:delete-to-beginning-of-word'
+    # 'ctrl-w q': 'core:close'
+  
+    # unnecessary? NO. VERY NECESSARY.
+    'ctrl-c': 'core:copy'
+    'ctrl-x': 'core:cut'
+    'ctrl-v': 'core:paste'
+  
+'atom-text-editor.mini':
+    'ctrl-g' : 'core:cancel'
+
+### FOR COMPATIBILITY WITH DOOM ####
+# Don't wanna mess up my doom hotkeys.
+# 'atom-workspace:not(.leader-mode), atom-workspace:not(.leader-mode) atom-text-editor:not(.mini)':
+  # 'space': 'leader:ienable'
+  # 'alt-space': 'leader:enable'
+
+'atom-workspace':
+    'ctrl-q' : 'window:close'
+    'alt-x': 'command-palette:toggle'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+    '] space' : 'oli:newline-below'
+    '[ space' : 'oli:newline-above'
+
+# TODO FIXME 
+'atom-text-editor.vim-mode-plus.leader-mode':
+    'f s' : 'core:save'
+    'w w' : 'window:focus-next-pane'
+    'w h' : 'window:focus-pane-on-left'
+    'w l' : 'window:focus-pane-on-right'
+    'w j' : 'window:focus-pane-below'
+    'w k' : 'window:focus-pane-above'
+    'w c' : 'pane:close'
+# wqurpiqweurpoiqweuroipqwieuropqiwuedasfsss
+    
+##### PYTHON (Mostly hydrogen) #####
+## ---------- Editor --------------
+'atom-text-editor[data-grammar~=python]:not([mini])':
+    'ctrl->': 'python-black:format'
+    'shift-enter': 'hydrogen:run-and-move-down'
+    'shift-alt-enter': 'hydrogen:run-cell-and-move-down'
+    
+    # Override ctrl-enter
+    'ctrl-enter': 'hydrogen:run'
+    'ctrl-shift-backspace': 'hydrogen:clear-results'
+    'ctrl-alt-enter': 'hydrogen:run-cell'
+    'ctrl-enter': 'hydrogen:run'
+    'alt-w' : 'hydrogen:add-watch'
+    'alt-i': 'hydrogen:toggle-inspector'
+    'ctrl-shift-alt-enter': 'hydrogen:run-all'
+
+# customized:
+'atom-text-editor.vim-mode-plus.normal-mode[data-grammar~=python]:not([mini])':
+    'ctrl-shift-up' : 'hydrogen:run-all-above'
+    'ctrl-c' : 'hydrogen:interrupt-kernel'
+    'backspace' : 'hydrogen:clear-result'
+    'space r r' : 'hydrogen:restart-kernel'
+# ---------- Workspace -----------
+# 'atom-workspace':
+#     'ctrl-shift-backspace': 'hydrogen:clear-results'
+# 'atom-pane.hey-pane-focus':
+#     'alt-shift-k' : 'hey-pane:toggle-follow-mode'

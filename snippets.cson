@@ -24,20 +24,31 @@
 '.text.tex.latex':
 	'environment':
 		'prefix': 'beg'
-		'body': '\\\\begin{${1:center}}\n\t$2\n\\\\end{${1:center}}'
+		'body': '\\\\begin{${1:center}}\n\t$2\n\\\\end{${1:center}}\n#3'
 
 	'inline environment':
 		'prefix': 'ibeg'
-		'body': '\\\\begin{$1} $2 \\\\end{$1}'
-	'cd':
+		'body': '\\\\begin{$1} $2 \\\\end{$1}$3'
+	'tikzcd':
 		'prefix' : 'cd'
 		'body' : '\\\\begin{center}\n\t\\\\begin{tikzcd}\n\t\t$1\n\t\\\\end{tikzcd}\n\\\\end{center}'
 	'new command':
 		'prefix': 'new'
-		'body' : '\\\\newcommand{\\\\$1}{$2}'
+		'body' : '\\\\newcommand{\\\\$1}{$2}\n$3'
 	'use package':
 		'prefix' : 'use'
-		'body' : '\\\\usepackage{$1}'
+		'body' : '\\\\usepackage{$1}\n$2'
 	'emphasize' :
 		'prefix' : 'em'
-		'body' : '\\\\emph{$1} $2'
+		'body' : '\\\\emph{$1}$2'
+	'diagram':
+		'prefix' : 'tik'
+		'body' : '\\\\begin{center}\n\t\\\\begin{tikzpicture}\n\t\t$1\n\t\\\\end{tikzpicture}\n\\\\end{center}'
+	'bold': 
+		'prefix': 'b'
+		'body' : '\\\\textbf{$1}$2'
+
+# This doesn't work.
+	# "editor-fold":
+	#     "prefix": "%e
+	#     "body": "// <editor-fold desc='$1'>\n// </editor-fold>"`
