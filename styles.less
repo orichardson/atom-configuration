@@ -47,12 +47,16 @@ atom-text-editor::shadow .invisible-character {
 	// color: turquoise 
 }
 
-atom-pane.pane:not(.active):not(:only-child) {
-  	&:hover {
-   	 -webkit-filter: grayscale(40%) brightness(90%);
+atom-pane.pane:not(.active):not(:only-child) atom-text-editor {
+	&:hover {
+	 	-webkit-filter: blur(.2px) grayscale(18%) brightness(110%);
 	}
-
 	&:not(:hover) {
-		-webkit-filter: blur(.5px) grayscale(80%) brightness(60%);
+		-webkit-filter: blur(.4px) grayscale(28%) brightness(84%);
 	}	
 }
+// .pane.active {
+//   atom-text-editor {
+//     // font-size: @font-size;
+//   }
+// }

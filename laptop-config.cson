@@ -1,0 +1,96 @@
+"*":
+  "activate-power-mode":
+    autoToggle: false
+  "atom-latex":
+    build_after_save: false
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    enableExtendedUnicodeSupport: true
+    useAlternateScoring: false
+  "bracket-matcher":
+    autocompleteBrackets: false
+    autocompleteSmartQuotes: false
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "activate-power-mode"
+      "markdown-preview"
+      "hyperclick"
+      "angularjs"
+      "language-sml"
+      "language-latex"
+    ]
+    packagesWithKeymapsDisabled: [
+      "Hydrogen"
+    ]
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+    uriHandlerRegistration: "always"
+    warnOnLargeFileLimit: 10
+  editor:
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 100
+    scrollPastEnd: true
+    softTabs: false
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "4e69a166-5366-e63b-264b-3591b4d78d1e"
+  "latex-completions":
+    customAliases: "~/.atom/packages/latex-completions/completions/custom.json"
+  "markdown-preview-plus":
+    mathConfig:
+      enableLatexRenderingByDefault: true
+      numberEquations: true
+    pandocConfig:
+      pandocBibliography: true
+    renderer: "pandoc"
+  "one-light-ui": {}
+  script:
+    stopOnRerun: true
+  tabs:
+    alwaysShowTabBar: false
+    enableMruTabSwitching: false
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode-plus":
+    hideCommandsFromCommandPalette: true
+  welcome:
+    showOnStartup: false
+".beamer.latex.tex.text":
+  editor:
+    showIndentGuide: true
+    softWrapHangingIndent: 4
+    tabLength: 2
+    tabType: "hard"
+".knitr.latex.tex.text":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".latex.memoir.tex.text":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".latex.tex.text":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".latex.tex.text.tikz":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".tex.text":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
+".tex.text:not(.beamer)":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4
