@@ -36,11 +36,17 @@
 #
 # Wiki: https://github.com/zhuochun/md-writer/wiki/Settings-for-Keymaps
 #
-'atom-text-editor[data-grammar~="latex"]':
-  'f5': 'latex:build'
 
-'atom-text-editor[data-grammar="text md"]':
-	'f5' : 'markdown-preview-plus:toggle'
-
-
+# 'atom-text-editor[data-grammar~="latex"]':
+#   'f5': 'latex:build'
+# 
+# 'atom-text-editor[data-grammar="text md"]':
+# 	'f5' : 'markdown-preview-plus:toggle'
+# 
 # 'atom-text-editor[data-grammar=""]'
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'ctrl-c': 'unset!' #'core:copy'  
+  'ctrl-w': 'unset!' #'core:close'
+# 'atom-text-editor.vim-mode-plus.normal-mode':
+  

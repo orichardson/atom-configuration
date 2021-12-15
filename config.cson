@@ -1,14 +1,20 @@
 "*":
   "agda-mode":
     agdaPath: "~/.cabal/bin/agda"
+  "atom-latex":
+    bibtex: "biber"
+    build_after_save: false
+    custom_toolchain: "%TEX %ARG %DOC && %TEX %ARG %DOC"
+    hide_log_if_success: true
+    save_on_build: true
   "atom-material-ui":
     colors:
       abaseColor: "#7c055f"
       accentColor: "#f7a879"
       predefinedColor: "Pink"
+    fonts: {}
     tabs:
       compactTabs: true
-      stretchedTabs: true
       tintedTabBar: true
     ui:
       panelContrast: true
@@ -31,6 +37,9 @@
       "autosave"
       "organized"
       "Hydrogen"
+      "minimap"
+      "minimap-find-and-replace"
+      "project-manager"
     ]
     packagesWithKeymapsDisabled: [
       "latex"
@@ -38,15 +47,15 @@
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
-      "atom-material-syntax-light"
+      "atom-material-syntax"
     ]
+    uriHandlerRegistration: "always"
   editor:
-    fontSize: 15
     invisibles:
       cr: false
       eol: false
       space: false
-    preferredLineLength: 120
+    preferredLineLength: 100
     scrollPastEnd: true
     showInvisibles: true
     softTabs: false
@@ -58,6 +67,7 @@
     fontFamily: "DaddyTimeMono"
   latex:
     opener: "pdf-view"
+  "latex-folding": {}
   "markdown-preview-plus":
     markdownItConfig: {}
     mathConfig:
@@ -78,7 +88,7 @@
   minimap:
     absoluteMode: true
     plugins:
-      "find-and-replace": true
+      "find-and-replace": false
       "find-and-replaceDecorationsZIndex": 0
     scrollAnimation: true
   "one-dark-ui": {}
@@ -134,6 +144,8 @@
   tabs:
     enableMruTabSwitching: false
   tasks: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace:
