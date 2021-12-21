@@ -1,9 +1,26 @@
 [
   {
+    title: "CHAI"
+    group: "record"
+    paths: [
+      "/home/oli/Research/interpreting-rewards"
+    ]
+    icon: "icon-person"
+    color: "#CA3CCA"
+    settings:
+      "editor.tabLength": 4
+      core:
+        themes: [
+          "one-light-ui"
+          "one-light-syntax"
+        ]
+  }
+  {
     title: "Org"
     group: "record"
     paths: [
       "/home/oli/org"
+      "/home/oli/Websites/csgo"
     ]
     icon: "icon-book"
     color: "#CCCCCC"
@@ -19,7 +36,7 @@
     title: "PDG-code"
     group: "research"
     paths: [
-      "/home/oli/Research/Joe/agent-goals/code"
+      "/home/oli/Research/pdg"
     ]
     icon: "icon-tools"
     color: "white"
@@ -40,6 +57,49 @@
           panelContrast: true
   }
   {
+    title: "PDG Writing"
+    group: "research"
+    paths: [
+      "/home/oli/Research/Joe/agent-goals/writing"
+      "/home/oli/Research/Joe/agent-goals/present"
+    ]
+    color: "orange"
+    settings:
+      "editor.tabLength": 2
+      "editor.lineHeight": 1.45
+      "editor.showInvisibles": false
+      core:
+        themes: [
+          "one-dark-ui"
+          "one-dark-syntax"
+        ]
+  }
+  {
+    title: "PDG Manual"
+    group: "research"
+    paths: [
+      "/home/oli/Research/Joe/agent-goals/writing/consolidated"
+    ]
+    icon: "icon-chevron-left"
+    color: "white"
+    settings:
+      "editor.tabLength": 4
+      core:
+        themes: [
+          "one-dark-ui"
+          "atom-dark-syntax"
+        ]
+  }
+  {
+    title: "Loom"
+    group: "tools"
+    paths: [
+      "/home/oli/Research/loom"
+    ]
+    icon: "icon-socks"
+    color: "#CACAFF"
+  }
+  {
     title: "Project Manager"
     group: "tools"
     paths: [
@@ -57,36 +117,5 @@
           "atom-light-syntax"
         ]
     devMode: true
-  }
-  {
-    title: "PDG Writing"
-    group: "research"
-    paths: [
-      "/home/oli/Research/Joe/agent-goals/writing/papers"
-    ]
-    color: "orange"
-    settings:
-      "editor.tabLength": 4
-      core:
-        themes: [
-          "seti-ui"
-          "seti-syntax"
-        ]
-  }
-  {
-    title: "PDG Manual"
-    group: "research"
-    paths: [
-      "/home/oli/Research/Joe/agent-goals/writing/consolidated"
-    ]
-    icon: "icon-chevron-left"
-    color: "white"
-    settings:
-      "editor.tabLength": 4
-      core:
-        themes: [
-          "one-dark-ui"
-          "one-dark-syntax"
-        ]
   }
 ]

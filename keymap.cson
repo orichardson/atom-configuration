@@ -46,7 +46,7 @@
 # # 'atom-text-editor[data-grammar=""]'
 
 'atom-text-editor.autocomplete-active':
-    tab: 'snippets:next-tab-stop'
+    'tab': 'snippets:next-tab-stop' #TODO vet me
 
 
 'atom-text-editor.vim-mode-plus':
@@ -67,6 +67,7 @@
   
 'atom-text-editor.mini':
     'ctrl-g' : 'core:cancel'
+    'alt-x' : 'command-palette:show-hidden-commands'
 
 ### FOR COMPATIBILITY WITH DOOM ####
 # Don't wanna mess up my doom hotkeys.
@@ -74,26 +75,62 @@
   # 'space': 'leader:ienable'
   # 'alt-space': 'leader:enable'
 
+  
+'atom-text-editor.vim-mode-plus.visual-mode:not(.insert-mode)':
+  's': 'vim-mode-plus:surround'
+  'S': 'vim-mode-plus:surround'
+
 'atom-workspace':
     'ctrl-q' : 'window:close'
     'alt-x': 'command-palette:toggle'
 
 'atom-text-editor.vim-mode-plus.normal-mode':
-    '] space' : 'oli:newline-below'
-    '[ space' : 'oli:newline-above'
+	'space' : 'unset!'
+	'space f s' : 'core:save'
+	'space f f' : 'application:open-file'
+	'space b k' : 'core:close'
+	'space w w' : 'window:focus-next-pane'
+	'space w h' : 'window:focus-pane-on-left'
+	'space w l' : 'window:focus-pane-on-right'
+	'space w j' : 'window:focus-pane-below'
+	'space w k' : 'window:focus-pane-above'
+	'space w c' : 'pane:close'
+	'[' : 'unset!'
+	']' : 'unset!'
+	'] space' : 'oli:newline-below'
+	'[ space' : 'oli:newline-above'
+	'[ [' : 'vim-mode-plus:move-up-to-edge'
+	'] ]' : 'vim-mode-plus:move-down-to-edge'
+	'x' : 'core:delete' # this way it's not in register...
+	'tab' : 'unset!'
+	'tab space' : 'vim-mode-plus:toggle-fold'
+	'space tab' : 'vim-mode-plus:toggle-fold'
+	'tab l' : 'vim-mode-plus:move-to-next-fold-start';
+	'tab h' : 'vim-mode-plus:move-to-previous-fold-start';
+	'tab j' : 'vim-mode-plus:move-to-next-fold-start-with-same-indent';
+	'tab k' : 'vim-mode-plus:move-to-previous-fold-start-with-same-indent';
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+    'k' : 'vim-mode-plus:move-up-screen'
+    'j' : 'vim-mode-plus:move-down-screen'
+    'g k' : 'vim-mode-plus:move-up'
+    'g j' : 'vim-mode-plus:move-down'
 
 # TODO FIXME 
 'atom-text-editor.vim-mode-plus.leader-mode':
     'f s' : 'core:save'
+    'f shift-S' : 'core:save-as'
     'w w' : 'window:focus-next-pane'
     'w h' : 'window:focus-pane-on-left'
     'w l' : 'window:focus-pane-on-right'
     'w j' : 'window:focus-pane-below'
     'w k' : 'window:focus-pane-above'
     'w c' : 'pane:close'
-# wqurpiqweurpoiqweuroipqwieuropqiwuedasfsss
-    
-##### PYTHON (Mostly hydrogen) #####
+
+
+##################### LANGUAGES #####################
+
+##### PYTHON Mostly hydrogen) #####
 ## ---------- Editor --------------
 'atom-text-editor[data-grammar~=python]:not([mini])':
     'ctrl->': 'python-black:format'
@@ -120,3 +157,11 @@
 #     'ctrl-shift-backspace': 'hydrogen:clear-results'
 # 'atom-pane.hey-pane-focus':
 #     'alt-shift-k' : 'hey-pane:toggle-follow-mode'
+
+
+###### LATEX #######
+'atom-text-editor[data-grammar~=tex]:not([mini])':
+    'f5' : 'atom-latex:build'
+    'ctrl-e': 'atom-latex:tools-environment'
+    # 'ctrl-l ctrl-s': 'atom-latex:synctex'
+    # 'ctrl-l ctrl-h': 'atom-latex:build-here'

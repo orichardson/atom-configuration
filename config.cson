@@ -1,19 +1,23 @@
 "*":
   Hydrogen:
     centerOnMoveDown: true
+    importNotebookURI: false
     languageMappings: "{ \"python\": \"python3\" }"
     showInspectorResultsInAutocomplete: true
+    startDir: "projectDirOfFile"
     wrapOutput: true
   "agda-mode":
     agdaPath: "~/.cabal/bin/agda"
   "atom-latex":
+    bibtex: "biber"
     build_after_save: false
     delayed_minimap_refresh: true
     latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -pdf -shell-escape"
     save_on_build: true
   "atom-material-ui":
     colors:
-      abaseColor: "#5c6bc0"
+      abaseColor: "#263171"
+      accentColor: "#96841b"
       genAccent: true
       paintCursor: true
       "predefined-color": "Indigo"
@@ -26,6 +30,22 @@
     ui:
       panelContrast: true
       useAnimations: false
+  "atom-typescript":
+    allowJS: true
+    ignoredDiagnosticCodes: [
+      "8002"
+      "8003"
+      "8004"
+      "8006"
+      "8008"
+      "8010"
+    ]
+    jsSyntaxScopes: [
+      "source.js"
+      "source.jsx"
+      "javascript"
+      "source.flow"
+    ]
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   autosave: {}
@@ -56,27 +76,23 @@
       "python-black"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "seti-ui"
-      "seti-syntax"
-    ]
     titleBar: "hidden"
   "custom-folds":
     postfix_0: "END_FOLD"
     prefix_0: "BEGIN_FOLD"
   editor:
-    fontSize: 20
+    fontSize: 16
     invisibles:
       cr: false
       eol: false
       space: false
+    lineHeight: 1.45
     preferredLineLength: 120
     scrollPastEnd: true
-    showInvisibles: true
+    scrollSensitivity: 70
     softTabs: false
     softWrap: true
     softWrapAtPreferredLineLength: true
-    tabLength: 4
   "exception-reporting":
     userId: "b1af2ff9-42af-4341-927b-aa755097dea9"
   fonts:
@@ -100,6 +116,7 @@
           ""
         ]
     python: "python3"
+  "ide-scala": {}
   latex:
     opener: "pdf-view"
   linter:
@@ -110,16 +127,14 @@
     pythonPath: "$PROJECT_PATH"
   "linter-spell": {}
   "linter-ui-default":
-    panelHeight: 228
+    panelHeight: 300
+    showPanel: true
   "markdown-preview-plus":
     markdownItConfig: {}
     mathConfig:
       enableLatexRenderingByDefault: true
+      numberEquations: true
     pandocConfig:
-      pandocArguments: [
-        "--smart"
-      ]
-      pandocBibliography: true
       pandocRemoveReferences: false
     previewConfig:
       activatePreviewWithEditor: true
@@ -203,50 +218,64 @@
   tabs:
     enableMruTabSwitching: false
   tasks: {}
+  "tree-ignore": {}
   "tree-view":
+    hideIgnoredNames: true
     hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearMultipleCursorsOnEscapeInsertMode: true
+    confirmThresholdOnOccurrenceOperation: 1000
+    defaultScrollRowsOnMiniScroll: 3
+    smoothScrollOnFullScrollMotion: true
+    smoothScrollOnFullScrollMotionDuration: 200
+    smoothScrollOnHalfScrollMotion: true
+    smoothScrollOnHalfScrollMotionDuration: 100
+    smoothScrollOnMiniScroll: true
+    smoothScrollOnMiniScrollDuration: 30
+    smoothScrollOnRedrawCursorLine: true
   welcome:
     showOnStartup: false
   whitespace:
     removeTrailingWhitespace: false
 ".beamer.latex.tex.text":
   editor:
-    preferredLineLength: 80
-    showInvisibles: true
-".bibtex.tex.text":
-  editor:
-    autoIndent: true
+    preferredLineLength: 90
+    showIndentGuide: true
+    showInvisibles: false
+    softWrapHangingIndent: 4
+    tabLength: 2
+    tabType: "hard"
 ".html.text.twig":
   editor:
     tabLength: 2
 ".knitr.latex.tex.text":
   editor:
-    preferredLineLength: 80
-".latex.log.tex.text":
-  editor:
-    autoIndent: true
-    preferredLineLength: 80
+    preferredLineLength: 90
+    softWrapHangingIndent: 2
+    tabLength: 4
 ".latex.memoir.tex.text":
   editor:
-    preferredLineLength: 80
-".latex.plain":
-  editor:
-    autoIndent: true
-    preferredLineLength: 80
-    softWrapAtPreferredLineLength: false
+    preferredLineLength: 90
+    softWrapHangingIndent: 2
+    tabLength: 4
 ".latex.tex.text":
   editor:
-    autoIndent: true
-    preferredLineLength: 80
-    showIndentGuide: true
-    showInvisibles: false
-    softWrap: true
-    softWrapAtPreferredLineLength: false
+    lineHeight: 1.3
+    preferredLineLength: 90
+    softWrapHangingIndent: 2
+    tabLength: 4
 ".latex.tex.text.tikz":
   editor:
-    autoIndent: true
-    preferredLineLength: 80
-".plain.simple.text":
+    preferredLineLength: 90
+    softWrapHangingIndent: 2
+    tabLength: 4
+".tex.text":
   editor:
-    softWrap: true
-    softWrapAtPreferredLineLength: false
+    softWrapHangingIndent: 2
+    tabLength: 4
+".tex.text:not(.beamer)":
+  editor:
+    softWrapHangingIndent: 2
+    tabLength: 4

@@ -49,10 +49,10 @@ atom-text-editor::shadow .invisible-character {
 
 atom-pane.pane:not(.active):not(:only-child) atom-text-editor {
 	&:hover {
-	 	-webkit-filter: blur(.2px) grayscale(18%) brightness(110%);
+	 	-webkit-filter: blur(.2px) grayscale(18%) brightness(99%);
 	}
 	&:not(:hover) {
-		-webkit-filter: blur(.4px) grayscale(28%) brightness(84%);
+		-webkit-filter: blur(.4px) grayscale(38%) brightness(98%);
 	}	
 }
 // .pane.active {
@@ -60,3 +60,64 @@ atom-pane.pane:not(.active):not(:only-child) atom-text-editor {
 //     // font-size: @font-size;
 //   }
 // }
+
+
+// DRACULA THEME
+// Who the hell wants gutter lines to look special?
+
+// atom-text-editor .gutter {
+// 	background-color: transparent;
+// }
+
+/// SETI THEME
+
+.theme-apex-ui {
+	.tab-bar .tab {
+		// background-color: 
+		&.active{
+			// background-color: #FEF;
+			background: linear-gradient(180deg, rgba(200,150,250,1) 0%, rgba(200,150,200,0.4) 20%, rgba(0,0,0,0) 70%);
+			border-radius: 5px;
+		}
+	
+	}
+	.pane {
+		// border-radius :30px;
+		padding:0px;
+	}
+	atom-text-editor {
+		// border-radius: 10px;
+		// padding:5px;
+		// box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	}
+}
+
+.theme-seti-ui {
+	.tab-bar .tab {	
+		// .title, .title::before, .close-icon {
+		// 	line-height: 45px
+		// border-radius :10px;
+		// }
+		// line-height: 45px;
+		// margin-top:5px;
+		&:not(.active) {
+			// height:90%; padding-top: 0px;
+			margin-top: 10px;
+			
+			.title, .title::before, .close-icon {
+				line-height: 45px
+			}
+			
+			// .title::before {
+			// 	// background-color: yellow;
+			// 	line-height:40px
+			// }
+		}
+
+		&.active::after {
+			max-width: 60%;
+			margin-left:20%;
+			height: 3px;
+		}
+	}
+}
