@@ -18,24 +18,89 @@
 #   'ctrl-p': 'core:move-down'
 #
 # You can find more information about keymaps in these guides:
-# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings
-# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
-#
-# If you're having trouble with your keybindings not working, try the
-# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
-# Debugging Guide for more information:
-# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
+# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 #
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
-# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
 
-# Default Keymaps for Markdown Writer
-# https://atom.io/packages/markdown-writer
-#
-# Wiki: https://github.com/zhuochun/md-writer/wiki/Settings-for-Keymaps
-#
-## Comment Scratch
-# 'atom-text-editor.vim-mode-plus.normal-mode':
-#  
+# '.platform-win32, .platform-linux':
+#   'alt': 'abort!'
+#   'alt-f1': 'window:toggle-menu-bar'
+
+
+'atom-text-editor.mini':
+		'ctrl-g' : 'core:cancel'
+		'alt-x' : 'command-palette:show-hidden-commands'
+				# double tap alt-x for all commands
+
+'atom-text-editor.vim-mode-plus':
+		'ctrl-shift-enter': 'vim-mode-plus:maximize-pane'
+		'ctrl-w' : 'native!'     # Who prefers C-W for delete a word to C-backspace??
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+		# 'ctrl-w' : 'none'
+		# 'ctrl-w ctrl-w': 'ed  itor:delete-to-beginning-of-word'
+		# 'ctrl-w w': 'editor:delete-to-beginning-of-word'
+		# 'ctrl-w q': 'core:close'
+		# unnecessary? NO. VERY NECESSARY.
+		'ctrl-c': 'core:copy'
+		'ctrl-x': 'core:cut'
+		'ctrl-v': 'core:paste'
+		'alt-space f s' : 'core:save'
+
+'atom-text-editor':
+	'alt-x' : 'command-palette:toggle'
+	'ctrl-_' : 'core:undo'      # Emacs  compatibility
+	# 'ctrl-g' : 'core:cancel'
+
+'atom-text-editor:not([mini]).autocomplete-active':
+	'enter' : 'snippets:next-tab-stop'
+	'tab tab' : 'autocomplete-plus:confirm'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+	'space' : 'unset!'
+	'space f s' : 'core:save'
+	'space f f' : 'application:open-file'
+	'space b k' : 'core:close'
+	'space w w' : 'window:focus-next-pane'
+	'space w h' : 'window:focus-pane-on-left'
+	'space w l' : 'window:focus-pane-on-right'
+	'space w j' : 'window:focus-pane-below'
+	'space w k' : 'window:focus-pane-above'
+	'space w c' : 'pane:close'
+	'[' : 'unset!'
+	']' : 'unset!'
+	'] space' : 'oli:newline-below'
+	'[ space' : 'oli:newline-above'
+	'[ [' : 'vim-mode-plus:move-up-to-edge'
+	'] ]' : 'vim-mode-plus:move-down-to-edge'
+	'x' : 'core:delete' # this way it's not in register...
+	# 'shift-space' : '' # Is it possible to have a key for
+	# 'alt-space' : 'command-palette:toggle'
+	'tab' : 'unset!'
+	'tab space' : 'vim-mode-plus:toggle-fold'
+	'space tab' : 'vim-mode-plus:toggle-fold'
+	'tab l' : 'vim-mode-plus:move-to-next-fold-start';
+	'tab h' : 'vim-mode-plus:move-to-previous-fold-start';
+	'tab j' : 'vim-mode-plus:move-to-next-fold-start-with-same-indent';
+	'tab k' : 'vim-mode-plus:move-to-previous-fold-start-with-same-indent';
+	# 'tab' : 'vim-mode-plus:toggle-fold'
+	'ctrl-backspace' : 'oli:dismiss-notifications'
+
+
+'atom-text-editor[data-grammar~=python]:not([mini])':
+	'ctrl->': 'python-black:format'
+	'shift-enter': 'hydrogen:run-and-move-down'
+	'shift-alt-enter': 'hydrogen:run-cell-and-move-down'
+
+	# Override ctrl-enter
+	'ctrl-enter': 'hydrogen:run'
+	'ctrl-shift-backspace': 'hydrogen:clear-results'
+	'ctrl-alt-enter': 'hydrogen:run-cell'
+	'ctrl-enter': 'hydrogen:run'
+	'alt-w' : 'hydrogen:add-watch'
+	'alt-i': 'hydrogen:toggle-inspector'
+	'ctrl-shift-alt-enter': 'hydrogen:run-all'

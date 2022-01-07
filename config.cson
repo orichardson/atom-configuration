@@ -53,11 +53,11 @@
       "atom-material-ui"
       "atom-material-syntax"
     ]
-    titleBar: "hidden"
   "custom-folds":
     postfix_0: "END_FOLD"
     prefix_0: "BEGIN_FOLD"
   editor:
+    fontSize: 16
     invisibles:
       cr: false
       eol: false
