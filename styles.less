@@ -27,9 +27,30 @@ atom-text-editor {
 }
 
 // style UI elements inside atom-text-editor
-atom-text-editor .cursor {
-  // border-color: red;
+// atom-text-editor .cursor {
+  // border-color: white !important;
+  // border-width: 1.5px !important;
+  // background-color: white !important;
+  // opacity: 1 !important;
+// }
+atom-text-editor.vim-mode-plus {
+	&.normal-mode {
+		.cursor {
+			background-color : white !important;
+			// border-color : #F00 !important;
+		}
+	}
+	&.insert-mode {
+		.cursor {
+			border-color : white !important;
+		}
+	}
 }
+// atom-text-editor
+// atom-text-editor .cursor {
+  // border-color: white !important;
+  // background-color: white !important;
+// }
 
 
 .markdown-preview {

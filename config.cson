@@ -1,6 +1,7 @@
 "*":
   Hydrogen:
     centerOnMoveDown: true
+    gateways: "[{\"name\": \"Local Jupyter\", \"options\" : {\"baseUrl\": \"http://localhost:8888\", \"token\":\"imatoKen\"}}]"
     importNotebookURI: false
     languageMappings: "{ \"python\": \"python3\" }"
     showInspectorResultsInAutocomplete: true
@@ -76,12 +77,15 @@
       "python-black"
     ]
     telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
     titleBar: "hidden"
   "custom-folds":
     postfix_0: "END_FOLD"
     prefix_0: "BEGIN_FOLD"
   editor:
-    fontSize: 16
     invisibles:
       cr: false
       eol: false
@@ -90,9 +94,11 @@
     preferredLineLength: 120
     scrollPastEnd: true
     scrollSensitivity: 70
+    showInvisibles: true
     softTabs: false
     softWrap: true
     softWrapAtPreferredLineLength: true
+    tabLength: 4
   "exception-reporting":
     userId: "b1af2ff9-42af-4341-927b-aa755097dea9"
   fonts:
@@ -128,7 +134,6 @@
   "linter-spell": {}
   "linter-ui-default":
     panelHeight: 300
-    showPanel: true
   "markdown-preview-plus":
     markdownItConfig: {}
     mathConfig:

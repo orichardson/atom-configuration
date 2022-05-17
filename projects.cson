@@ -37,6 +37,7 @@
     group: "research"
     paths: [
       "/home/oli/Research/pdg"
+      "/home/oli/Research/Joe/agent-goals/code"
     ]
     icon: "icon-tools"
     color: "white"
